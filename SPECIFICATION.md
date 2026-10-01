@@ -1967,16 +1967,13 @@ Agent actions:
 
 9\. explain trade\-offs
 
-# 27\. Industry Alignment and Schneider\-Relevant Context
+# 27\. Industry Alignment 
 
-The architecture intentionally resembles the functional separation used in modern digital\-grid and energy\-management systems: operational state, forecasting, optimization, DER/flexibility management, human decision support, and digital twin/simulation\. Schneider Electric publicly describes its One Digital Grid Platform as an AI\-enabled platform combining planning, operations and asset management, with capabilities including Grid AI Assistant, AI\-based network model tuning, and real\-time outage/restoration intelligence\.
+The architecture intentionally resembles the functional separation used in modern digital\-grid and energy\-management systems: operational state, forecasting, optimization, DER/flexibility management, human decision support, and digital twin/simulation\.
 
-Schneider also describes its grid ecosystem in terms of ADMS and DERMS, distributed energy resources, grid flexibility, predictive analytics and AI\-enabled operations\. This proposal should therefore use terms such as DER, flexibility, forecasting, optimization, digital twin, grid operations and decision support accurately rather than presenting the project as a generic chatbot\.
+This proposal should therefore use terms such as DER, flexibility, forecasting, optimization, digital twin, grid operations and decision support accurately rather than presenting the project as a generic chatbot\.
 
-A current Schneider Electric Data Scientist posting describes an AI Core team working on the Grid AI Assistant inside ADMS and lists responsibilities including software\-development lifecycle participation and collecting, preprocessing and analyzing data for AI models\. This is relevant context for positioning the project as an AI/software energy\-domain prototype\.
 
-__Positioning statement  
-__The project is not a reproduction of Schneider's proprietary software\. It is an independently designed academic/prototype system using publicly described industry concepts to demonstrate forecasting, constrained optimization, DER coordination, digital\-twin simulation and agentic AI\.
 
 # 28\. Reliability, Security and Responsible AI Design
 
@@ -2298,17 +2295,9 @@ Carbon\-dioxide equivalent used to aggregate greenhouse\-gas impacts into a comm
 
 The project design uses the following authoritative or primary references for terminology and architectural context\. The references support the distinction between grid operations, AI\-enabled digital\-grid software, DER/flexibility management, and mathematical scheduling/optimization\.
 
-__Schneider Electric — One Digital Grid Platform  
-__AI\-enabled grid platform integrating planning, operations and asset management; describes Grid AI Assistant, AI\-based network model tuning, ADMS/DERMS and real\-time data use\.  
-https://www\.se\.com/ww/en/about\-us/newsroom/news/press\-releases/schneider\-electric\-debuts\-one\-digital\-grid\-platform\-to\-help\-utilities\-modernize\-and\-address\-energy\-costs\-691af6851937b58c890951a3/
-
 __Schneider Electric — Future of Energy Intelligence  
 __Overview of grid planning, operations/resiliency and grid flexibility/prosumer engagement\.  
 https://www\.se\.com/ww/en/work/campaign/energy\-intelligence/
-
-__Schneider Electric — Data Scientist / AI Core  
-__Current Schneider careers description of an AI Core team working on Grid AI Assistant inside ADMS\.  
-https://careers\.se\.com/jobs/130856?lang=en\-us
 
 __Google OR\-Tools  
 __Official optimization toolkit documentation covering scheduling, constraint optimization and mathematical programming\.  

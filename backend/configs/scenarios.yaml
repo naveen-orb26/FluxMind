@@ -1,0 +1,48 @@
+scenarios:
+  baseline:
+    name: "Baseline Community Operation"
+    description: "Standard 100-apartment community with 40 EVs, 250kW solar, 500kWh battery."
+    solar_multiplier: 1.0
+    ev_count: 40
+    data_center_power_kw: 200
+    battery_capacity_kwh: 500
+    pcc_limit_kw: 2500
+    carbon_multiplier: 1.0
+    price_multiplier: 1.0
+    policy: "BALANCED"
+
+  cloudy_day:
+    name: "Low Solar Generation"
+    description: "Cloudy conditions with 40% reduction in solar PV output."
+    solar_multiplier: 0.6
+    ev_count: 40
+    data_center_power_kw: 200
+    battery_capacity_kwh: 500
+    pcc_limit_kw: 2500
+    carbon_multiplier: 1.1
+    price_multiplier: 1.0
+    policy: "BALANCED"
+
+  ev_surge:
+    name: "EV Charging Surge"
+    description: "Surge in EV charging demand with 60 active charging sessions."
+    solar_multiplier: 1.0
+    ev_count: 60
+    data_center_power_kw: 200
+    battery_capacity_kwh: 500
+    pcc_limit_kw: 2500
+    carbon_multiplier: 1.0
+    price_multiplier: 1.0
+    policy: "BALANCED"
+
+  grid_constraint:
+    name: "Constrained PCC Limit"
+    description: "Utility grid constrained with PCC capacity reduced to 1800 kW."
+    solar_multiplier: 1.0
+    ev_count: 40
+    data_center_power_kw: 200
+    battery_capacity_kwh: 500
+    pcc_limit_kw: 1800
+    carbon_multiplier: 1.0
+    price_multiplier: 1.2
+    policy: "PEAK"

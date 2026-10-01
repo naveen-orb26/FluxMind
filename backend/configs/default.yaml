@@ -1,0 +1,56 @@
+simulation:
+  timestep_minutes: 15
+  horizon_steps: 96
+  random_seed: 42
+
+community:
+  apartments: 500
+  ev_chargers: 60
+  solar_capacity_kw: 350
+  battery_capacity_kwh: 600
+  battery_power_kw: 300
+  pcc_limit_kw: 2500
+
+battery:
+  min_soc_pct: 20
+  max_soc_pct: 95
+  initial_soc_pct: 50
+  charge_efficiency: 0.95
+  discharge_efficiency: 0.95
+
+flexible_loads:
+  ev:
+    charger_kw: 7.2
+    min_energy_kwh: 12
+    max_energy_kwh: 30
+  data_center:
+    flexible_power_kw: 200
+    default_duration_hours: 2
+    preferred_start_step: 40 # 10:00 AM (absorbs midday solar)
+  water_pump:
+    power_kw: 50
+    required_energy_kwh: 100
+    preferred_start_step: 16 # 04:00 AM (runs off-peak night)
+
+common_area:
+  base_kw: 80
+  peak_kw: 160
+
+policy:
+  balanced:
+    cost: 0.25
+    carbon: 0.25
+    peak: 0.25
+    discomfort: 0.20
+    curtailment: 0.05
+
+carbon:
+  baseline_g_per_kwh: 450
+  solar_day_reduction_factor: 0.55
+  evening_peak_multiplier: 1.35
+
+pricing:
+  currency: "USD"
+  off_peak_rate: 0.10
+  shoulder_rate: 0.15
+  peak_rate: 0.30
